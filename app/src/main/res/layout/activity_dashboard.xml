@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B8F44"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Welcome to Fare Predictor"
+        android:textColor="@color/yellowLight"
+        android:textSize="24dp"
+        android:layout_marginTop="50dp"
+       />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Kilometers"
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:textColor="@color/yellowLight"
+        app:hintTextColor="@color/yellowLight"
+        android:hint="Distance_in_kilometers"
+        android:textColorHint="@color/yellowLight"
+        android:layout_gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="20dp"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Mileage"
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:hint="Distance in Kilometers per Litre"
+        android:layout_gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/yellowLight"
+        android:textColorHint="@color/yellowLight"
+        android:layout_marginTop="20dp"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Price"
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:textColor="@color/yellowLight"
+        android:textColorHint="@color/yellowLight"
+        android:hint="Petrol_price_in_Kshs"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/Fare"
+            android:layout_width="128dp"
+            android:layout_height="32dp"
+            app:boxStrokeColor="@color/yellowLight"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            tools:text="Fare: "
+            android:textColor="@color/yellowLight"/>
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:background="@color/yellowLight"
+        android:text="Calculate_fare"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/yellowLight"
+        android:textColorHint="@color/yellowLight"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        tools:text="Predict Fare" />
+
+
+    </LinearLayout>
+</ScrollView>
